@@ -5,7 +5,8 @@ use std::path::Path;
 
 fn main() {
     let mut file_index: u32 = 001;
-    for _ in 0..1 {
+    let number_of_matrices = 100;
+    for _ in 0..number_of_matrices {
         let path_string = format!("../output/matrix{}.txt", file_index);
         let path = Path::new(&path_string);
         let display = path.display();
